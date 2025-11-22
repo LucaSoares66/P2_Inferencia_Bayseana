@@ -1,0 +1,13 @@
+pandas
+sqlalchemy
+psycopg2-binary
+plotly
+dash
+matplotlib
+numpy
+pymc
+arviz
+seaborn
+patsy
+streamlit
+bambi
