@@ -108,7 +108,7 @@ st.markdown("---")
 st.header("📄 Relatório de Inferência Bayesiana")
 
 # Caminho do PDF
-caminho_pdf = r"C:\Users\lucam\Documents\Python_VS\Bayes\Relatório___Inferência_Bayseana.pdf"
+caminho_pdf = "Relatório___Inferência_Bayseana.pdf"
 
 if os.path.exists(caminho_pdf):
     
@@ -140,4 +140,5 @@ if os.path.exists(caminho_pdf):
 
 else:
     st.error("❌ Arquivo PDF não encontrado!")
+
     st.code(caminho_pdf)
