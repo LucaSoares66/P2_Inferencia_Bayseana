@@ -1,20 +1,33 @@
-import pandas as pd
-from sqlalchemy import create_engine, text, inspect
-import plotly.express as px
-from dash import Dash, dcc, html, Input, Output
-import matplotlib.pyplot as plt
+# --- BÁSICO DO SISTEMA ---
+import os
+import base64
+
+# --- BÁSICO DE CIÊNCIA DE DADOS ---
 import numpy as np
+import pandas as pd
+
+# --- BANCO DE DADOS ---
+from sqlalchemy import create_engine, text, inspect
+
+# --- STREAMLIT (DEVE VIR CEDO) ---
+import streamlit as st
+
+# --- VISUALIZAÇÃO ---
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
 import plotly.io as pio
+
+# --- DASH (SE AINDA FOR USAR) ---
+from dash import Dash, dcc, html, Input, Output
+
+# --- MODELAGEM BAYESIANA ---
 import pymc as pm
 import arviz as az
-import seaborn as sns
-import patsy
-import streamlit as st
 import bambi as bmb
-import arviz as az
 from bambi import Prior
-import base64
-import os
+
+
 
 
 
@@ -142,3 +155,4 @@ else:
     st.error("❌ Arquivo PDF não encontrado!")
 
     st.code(caminho_pdf)
+
